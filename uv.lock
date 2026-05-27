@@ -901,7 +901,7 @@ requires-dist = [
 [[package]]
 name = "irpf-mentor"
 version = "0.1.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "irpf-core" },
     { name = "irpf-knowledge" },

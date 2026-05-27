@@ -46,26 +46,40 @@ uv run python tools/redact.py \
 
 ## Use it from Claude Code
 
+No clone needed — register the MCP server straight from GitHub (`uv` builds and
+caches it on first run):
+
 ```bash
-claude mcp add irpf-mentor -- uv run --directory /ABSOLUTE/PATH/TO/irpf-mentor irpf-mcp
+claude mcp add irpf-mentor -- uvx --from git+https://github.com/augustovillar/irpf-mentor irpf-mcp
 ```
 
-Then install the skills by pointing Claude Code at `integrations/claude_skills/`
-(or copy them into your skills directory). Ask things like *"decode
-~/ProgramasRFB/IRPF2026/transmitidas/…​.DEC"* or *"como declaro previdência
-privada PGBL?"*.
+Then install the five skills:
+
+```bash
+git clone https://github.com/augustovillar/irpf-mentor && cd irpf-mentor
+./scripts/install_skills.sh          # copies into ~/.claude/skills/  (--link to symlink)
+```
+
+Ask things like *"decode ~/ProgramasRFB/IRPF2026/transmitidas/…​.DEC"* or *"como
+declaro previdência privada PGBL?"*.
+
+> Developing locally? Point the server at your checkout instead:
+> `claude mcp add irpf-mentor -- uv run --directory /ABSOLUTE/PATH/TO/irpf-mentor irpf-mcp`
 
 ## Use it from Codex
 
-Add to `~/.codex/config.toml`:
+Add to `~/.codex/config.toml` (no clone needed):
 
 ```toml
 [mcp_servers.irpf-mentor]
-command = "uv"
-args = ["run", "--directory", "/ABSOLUTE/PATH/TO/irpf-mentor", "irpf-mcp"]
+command = "uvx"
+args = ["--from", "git+https://github.com/augustovillar/irpf-mentor", "irpf-mcp"]
 ```
 
 See `integrations/codex_agents/AGENTS.md` for the workflow instructions.
+
+> Developing locally? Use `command = "uv"` with
+> `args = ["run", "--directory", "/ABSOLUTE/PATH/TO/irpf-mentor", "irpf-mcp"]`.
 
 ## MCP tools
 
