@@ -21,7 +21,7 @@ Tax year: **IRPF 2026** (ano-base 2025).
 ```
 packages/irpf_core/        # parser, encoder, schema, validators, accessors
 packages/irpf_knowledge/   # committed extracted knowledge per tax year
-packages/irpf_mcp/         # MCP server (9 tools)
+packages/irpf_mcp/         # MCP server (11 tools)
 extractors/                # one-shot build scripts: JAR layout + Docling PDFs
 integrations/claude_skills # 5 Claude Code skills
 integrations/codex_agents  # Codex AGENTS.md mirror
@@ -33,7 +33,7 @@ tools/                     # redact.py, check_no_pii.py
 
 ```bash
 uv sync
-uv run pytest          # 32 tests
+uv run pytest          # 44 tests
 ```
 
 To regenerate the synthetic fixture from your own (gitignored) declaration:
@@ -80,6 +80,8 @@ See `integrations/codex_agents/AGENTS.md` for the workflow instructions.
 | `diff(path_old, path_new)` | Compare two declarations |
 | `encode(declaration, output_path)` | Re-emit an edited `.DBK` |
 | `tax(path)` | Read the program-computed tax figures (advisory) |
+| `sources(path)` | Detect candidate source documents (informes) for a declaration |
+| `map_document(content, source_kind?)` | Map an informe's content onto declaration fields |
 
 ## Privacy backstop
 
