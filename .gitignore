@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+dist/
+build/
+
+# uv
+.venv/
+.python-version
+
+# Editors
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Extractor working dirs (decompiled Java sources are gitignored;
+# only the derived JSON field map is committed)
+extractors/_decompiled/
+extractors/_pdfs/
+extractors/_tools/
+
+# IRPF declaration files anywhere outside fixtures/ are PII.
+# fixtures/ is allowed to contain ONLY synthetic, redacted data.
+*.DBK
+*.DEC
+*.REC
+*.dbk
+*.dec
+*.rec
+!fixtures/*.DBK
+!fixtures/*.DEC
+!fixtures/*.dbk
+!fixtures/*.dec

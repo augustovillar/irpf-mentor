@@ -1,0 +1,60 @@
+irpf-mentor — Personal, Non-Commercial Use License
+Copyright (c) 2026 Augusto Villar. All rights reserved.
+
+This is NOT an open-source license. It is a proprietary license that grants a
+limited set of permissions and reserves all other rights.
+
+1. Definitions
+   "Software" means the source code, data files, documentation, and any other
+   material in this repository.
+   "You" means any individual or entity exercising permissions under this
+   license.
+   "Commercial use" means any use primarily intended for or directed toward
+   commercial advantage or monetary compensation, whether by You or a third
+   party.
+
+2. Grant
+   Subject to the conditions and restrictions below, the copyright holder
+   grants You a worldwide, royalty-free, non-exclusive, non-transferable,
+   revocable license to:
+   (a) use the Software for personal, non-commercial purposes; and
+   (b) modify the Software and create derivative works for Your own personal,
+       non-commercial use.
+
+3. Restrictions
+   You may NOT:
+   (a) use the Software, in whole or in part, for any commercial purpose;
+   (b) distribute, publish, sublicense, sell, rent, lease, or otherwise make
+       available the Software or any modified or derivative version of it to
+       any third party, in source or binary form, by any means; or
+   (c) remove or alter this license or any copyright, attribution, or notice
+       contained in the Software.
+
+   For clarity, permission to modify the Software (Section 2(b)) does NOT
+   include any permission to distribute those modifications.
+
+4. Third-party and government material
+   Portions of the Software are derived from public Receita Federal do Brasil
+   publications, as described in NOTICE.md. This license does not purport to
+   grant any rights in that underlying government material, which remains
+   subject to its own terms. See NOTICE.md for provenance and the
+   interoperability and advisory disclaimers.
+
+5. Reservation of rights
+   All rights not expressly granted in Section 2 are reserved by the copyright
+   holder. Any use outside the scope of this license requires the prior
+   written permission of the copyright holder.
+
+6. No warranty
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY,
+   WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF,
+   OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+   SOFTWARE.
+
+7. Termination
+   This license terminates automatically if You breach any of its terms. Upon
+   termination, You must cease all use of the Software and destroy all copies
+   in Your possession.

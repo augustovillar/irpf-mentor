@@ -1,0 +1,16 @@
+[project]
+name = "irpf-knowledge"
+version = "0.1.0"
+description = "Committed knowledge artifacts (leiaute, perguntas, ajuda, jar field map) per tax year"
+requires-python = ">=3.11"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/irpf_knowledge"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"src/irpf_knowledge/data" = "irpf_knowledge/data"

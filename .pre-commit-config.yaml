@@ -1,0 +1,15 @@
+repos:
+  - repo: local
+    hooks:
+      - id: no-irpf-pii
+        name: Block IRPF PII (CPF / declaration files)
+        entry: uv run python tools/check_no_pii.py
+        language: system
+        pass_filenames: false
+        always_run: true
+      - id: ruff
+        name: ruff lint
+        entry: uv run ruff check
+        language: system
+        types: [python]
+        pass_filenames: false
